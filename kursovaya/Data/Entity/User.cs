@@ -2,6 +2,7 @@
 {
     public class User
     {
+
         public int id { get; set; }
         public string firstname { get; set; }
         public string lastname { get; set; }
@@ -11,6 +12,14 @@
         public User()
         {
             
+        }
+
+        public User(string firstname, string lastname, string email, string password)
+        {
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.email = email;
+            this.password = password;
         }
 
         public string Firstname
@@ -37,12 +46,5 @@
             set => password = value;
         }
 
-        public User(string firstname, string lastname, string email, string password)
-        {
-            this.firstname = firstname;
-            this.lastname = lastname;
-            this.email = email;
-            this.password = password;
-        }
     }
 }

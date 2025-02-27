@@ -5,10 +5,13 @@ namespace kursovaya.Data.Context
 {
     public class DbContext : System.Data.Entity.DbContext
     {
+
         public DbSet<User> Users { get; set; }
-        
+
         public DbContext() : base("DefaultConnection")
         {
+
         }
+
     }
 }

@@ -5,7 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Учёт запасных частей:Регистрация" Height="500" Width="500"
+        Title="Учёт запасных частей:Регистрация" Height="540" Width="500"
         WindowState="Normal"
         WindowStartupLocation="CenterScreen"
         Background="DimGray">
@@ -75,6 +75,8 @@
                 Grid.Row="8"
                 Margin="10"
                 Content="Войти"
+                FontWeight="Bold"
+                Foreground="{DynamicResource MaterialDesignPrimary}"
                 Style="{StaticResource MaterialDesignFlatButton}"
                 Click="LoginButton_OnClick"/>
     </Grid>

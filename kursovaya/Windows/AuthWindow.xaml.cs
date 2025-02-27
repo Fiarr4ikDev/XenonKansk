@@ -7,6 +7,7 @@ namespace kursovaya.Windows
 {
     public partial class AuthWindow : Window
     {
+
         public AuthWindow()
         {
             InitializeComponent();
@@ -22,7 +23,6 @@ namespace kursovaya.Windows
         {
             var login = LoginTextBox.Text.Trim();
             var password = PasswordBox.Password.Trim();
-            
 
             using (var context = new DbContext())
             {
@@ -43,5 +43,6 @@ namespace kursovaya.Windows
         {
             OpenWindow(new RegisterWindow());
         }
+
     }
 }

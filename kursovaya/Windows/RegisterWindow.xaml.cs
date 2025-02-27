@@ -6,6 +6,7 @@ namespace kursovaya.Windows
 {
     public partial class RegisterWindow : Window
     {
+
         public RegisterWindow()
         {
             InitializeComponent();
@@ -84,5 +85,6 @@ namespace kursovaya.Windows
                 MessageBoxImage.Information);
             OpenWindow(new AuthWindow());
         }
+
     }
 }
