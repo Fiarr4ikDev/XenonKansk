@@ -27,7 +27,7 @@ namespace kursovaya.Windows
             using (var context = new DbContext())
             {
                 User authUser = null;
-                authUser = context.Users.FirstOrDefault(b => b.email == login && b.password == password);
+                authUser = context.Users.FirstOrDefault(b => b.Email == login && b.Password == password);
                 if (authUser != null)
                 {
                     MessageBox.Show("Успешный вход", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
